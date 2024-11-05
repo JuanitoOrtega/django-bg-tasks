@@ -6,8 +6,8 @@ class MessageBoard(models.Model):
     subscribers = models.ManyToManyField(User, related_name='messageboard', blank=True, verbose_name="Subscriptores")
     
     class Meta:
-        verbose_name = "Subscriptor"
-        verbose_name_plural = "Subscriptores"
+        verbose_name = "Tablero"
+        verbose_name_plural = "Tableros"
     
     def __str__(self):
         return str(self.id)

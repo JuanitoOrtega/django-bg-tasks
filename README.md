@@ -2,7 +2,7 @@
 
 #### - Create Virtual Environment
 ###### # Mac
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -16,7 +16,7 @@ python3 -m venv venv
 <br>
 
 #### - Install dependencies
-```
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 <br>
 
 #### - Migrate to database
-```
+```bash
 python manage.py migrate
 python manage.py createsuperuser
 ```
@@ -32,14 +32,14 @@ python manage.py createsuperuser
 <br>
 
 #### - Run application
-```
+```bash
 python manage.py runserver
 ```
 
 <br>
 
 #### - Generate Secret Key ( ! Important for deployment ! )
-```
+```bash
 python manage.py shell
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
